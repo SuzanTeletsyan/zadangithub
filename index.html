@@ -1,56 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"> </script>
-    <title>zadan</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script type="text/javascript">
+ $(document).ready(function(){
+    // добавляем действия для кнопки Добавить категорию
+    $(".addBtn").click(function(){
+        $("ul:first").after("<ul><li><label><input type='checkbox' /></label></li></ul>");
+    }); //--закрытие addCat click
+ }); //--закрытие document ready
+ </script>
 </head>
 <body>
-        
-            
-            
-            
-    <ul>
-   
-        <li  class="done">  <div class="tabl" >  </div>   <input type="checkbox"> Todo item 1
+        <ul id="tree">
+            <li>
+                <label>
+                    <input type="checkbox" />
+                </label>
             </li>
-            
-        <li background-color:#b0c4de class="done"> <input type="checkbox"> Todo item 2
-             </li>
-        <li class="done"> <input type="checkbox"> Todo item 3
-             </li>
-    </ul>
-<ul id="myUL">
+            <li>
+                <label>
+                    <input type="checkbox" />
+                </label>
+            </li>
+			<li>
+                <label>
+                    <input type="checkbox" />
+                </label>
+            </li>
+        </ul>
+		        
 
-    <li  class="done">  <div class="tabl" >  </div>   <input type="checkbox"> 
-    </li>
-    <li  class="done">  <div class="tabl" >  </div>   <input type="checkbox"> 
-    </li>
-    <li  class="done">  <div class="tabl" >  </div>   <input type="checkbox"> 
-    </li>
-              </ul>
-
-    <div class="container">
+ 
+ 
+ 
+     <div class="container">
             <div class="form-wrapper clearfix" >
               <input  type="text" id="todo-input" placeholder="Add New ltem">
             </input>
-              <div id="div">
-                <div style="float:left; height: 40px; width: 40px; background-color: rgb(128, 0, 0);"></div>
-                <div style="float:left; height: 40px; width: 40px; background-color: rgb(194, 48, 138);"></div>
-                <div style="float:left; height: 40px; width: 40px; background-color: rgb(72, 27, 124);"></div>
-                <div style="float:left; height: 40px; width: 40px; background-color: rgb(18, 199, 245);"></div>
-                <div style="float:left; height: 40px; width: 40px; background-color: rgb(144, 219, 248);"></div>
-                <div style="float:left; height: 40px; width: 40px; background-color: rgb(243, 230, 115);"></div>
+              <div class="div">
+                
+                <button><div id="colorRed" class='pickColor' ></div></button>
+                <button><div id="colorPink" class='pickColor'></div></button>
+                <button><div id="colorPurple" class='pickColor'></div></button>
+                <button><div id="colorBlue" class='pickColor'></div></button>
+                <button><div id="colorBlu" class='pickColor'></div></button>
+                <button ><div id="coloryellow" class='pickColor'></div></button>
               </div> 
             <div class="Green1"></div>
-              <span onclick="newItem()" class="addBtn">Add</span>
-            </div>
-            <div class="margin-t-b">
-              
-            </div>
+              <button onclick="function()" class="addBtn">Add</button>
+            
     
           </div>
         
@@ -61,8 +62,8 @@
         
       
 
-  <div id="msgid">
-    </div>
+ <div id="msgid">
+  </div>
 
 </div>
 </body>

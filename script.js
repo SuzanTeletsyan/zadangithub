@@ -5,6 +5,10 @@ $(document).ready(function(){
  arr.shift();
 
 
+ $(".pickColor").click (function ())
+ 
+ 
+
 
 
  // Global declaration of list 
@@ -23,16 +27,17 @@ function toggleEmptyState() {
 }
 
 function newItem() {
-  var newIter = $("li").length + 1;
+  var newItem = $("li").length + 1;
   var inputValue = $("#todo-input").val();
   if (inputValue === '') {
-    alert("For Gods Sake Just type something before adding anything!");
+    alert("");
   } else {
-    var li = "<li data-delete-id='" + newIter + "'>" + inputValue + "</li>";
+    var li = "<li data-delete-id='" + newItem + "'>" + inputValue + "</li>";
     $('#myUL').append(li);
     $("#todo-input").val("");
-    var span = "<span class='close'>\u00D7</span>";
-    $("[data-delete-id='" + newIter + "']").append(span);
+    var span1 = "<span class='close'>\u00D7</span>";
+    $("[data-delete-id='" + newItem + "']").append("span1");
+	$("ul").after("<ul><li><label><input type='checkbox' />span1</label></li></ul>");
     $('.close').off('click').on('click', removeItem);
   }
   toggleEmptyState()

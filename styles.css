@@ -1,5 +1,12 @@
+*//  добавление строк
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
+
 li  { 
-  border: 2px solid Black;
+  border: 2px solid white;
   padding: 20px;
   background-color: Green;
   width: 50%;
@@ -8,26 +15,65 @@ li  {
   
  }
  
+.done {
+  color: rgb(10, 10, 10)
+}
+
+ .cvet { 
+   background: red;
+
+ }
+
+ .pickColor{
+  float:left; 
+  height: 44px; 
+  width: 40px; 
+ }
+
+ #colorRed { 
+  background: rgba(239, 83, 80, 0.85); 
+
+ }
+ #colorPink { 
+  background:rgba(240, 98, 146, 0.85); 
+
+ }
+
+  #colorPurple {
+    background:  rgba(126, 87, 194, 0.85)
+  }
+
+  #colorBlue {
+    background: rgba(66, 165, 245, 0.85)
+  }
+
+  #colorBlu {
+    background: rgba(77, 208, 225, 0.85)
+
+  }
+
+  #coloryellow {
+    background: #ffe082
+  }
+
+ 
+
+
+ 
+ 
 
 
  
 
 
+ 
 
-
-
-
-
-
-
-
-
-*//  добавление строк
-html,
-body {
-  height: 100%;
-  margin: 0px;
-}
+  *//  добавление строк
+  html,
+  body {
+    height: 100%;
+    margin: 0px;
+  }
 
 .clearfix:after {
   content: ".";
@@ -84,7 +130,7 @@ ul li {
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: #eee;
+  background: rgba(240, 98, 146, 0.85);
   font-size: 18px;
   transition: 0.2s;
   /* make the list items unselectable */
@@ -97,14 +143,13 @@ ul li {
 /* Set all odd list items to a different color (zebra-stripes) */
 
 ul li:nth-child(odd) {
-  background: #f9f9f9;
+  background:   rgba(239, 83, 80, 0.85);
+ 
 }
 
 /* Darker background-color on hover */
 
-ul li:hover {
-  background: #ddd;
-}
+
 
 /* Style the close button */
 
@@ -134,7 +179,7 @@ ul li:hover {
 
 .form-wrapper {
   padding: 20px;
-  box-shadow: 0 1px 0px 0 #5F5F5F;
+  box-shadow: 0 1px 0px 0 rgb(71, 27, 27);
 }
 
 #todo-input {
@@ -148,11 +193,11 @@ ul li:hover {
 .form-wrapper>.addBtn {
   padding: 12px;
   width: 25%;
-  background-color: rgb(13, 139, 122);#4CAF50;
+  background-color: rgb(13, 139, 122);
   color: white;
   text-align: center;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   float: left;
   cursor: pointer;
   transition: 0.3s;
